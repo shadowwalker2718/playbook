@@ -1,0 +1,10 @@
+- hosts: allvm
+  tasks:
+    - copy:
+        src: "{{ item.src }}"
+        dest: "{{ item.dest }}"
+      with_items:
+        - { src: '/opt/share/playbook/.bashrc', dest: '/root/.bashrc' }
+        - { src: '/opt/share/playbook/etc/hosts', dest: '/etc/hosts' }
+        - { src: '/opt/share/playbook/etc/resolv.conf', dest: '/etc/resolv.conf' }
+
