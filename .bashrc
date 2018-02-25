@@ -94,7 +94,7 @@ alias ocaml='rlwrap ocaml'
 GIT_PROMPT_ONLY_IN_REPO=1
 GIT_PROMPT_SHOW_UPSTREAM=1
 GIT_PROMPT_SHOW_UNTRACKED_FILES=no
-source ~/.bash-git-prompt/gitprompt.sh
+#source ~/.bash-git-prompt/gitprompt.sh
 
 
 # for pandoc - https://github.com/jgm/pandoc/blob/master/INSTALL.md
@@ -158,4 +158,20 @@ export PATH=$CASSANDRA_HOME/bin:$PATH
 export CLASSPATH=$CLASSPATH:$HADOOP_HOME/lib/*
 export CLASSPATH=$CLASSPATH:$HIVE_HOME/lib/*
 export CLASSPATH=$CLASSPATH:$CASSANDRA_HOME/lib/*
+
+export STORM_HOME=/opt/share/storm
+export PATH=$STORM_HOME/bin:$PATH
+
+export ZOOKEEPER_HOME=/opt/share/zk
+export ZOOCFGDIR=$ZOOKEEPER_HOME/conf
+export PATH=$ZOOKEEPER_HOME/bin:$PATH
+
+export CLASSPATH=$CLASSPATH:$STORM_HOME/lib/*
+
+export MESOS_HOME=/opt/share/mesos_build
+export PATH=$MESOS_HOME/bin:$MESOS_HOME/sbin:$PATH
+
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
+export PATH=$JAVA_HOME/bin:$PATH
+
 
